@@ -1,0 +1,320 @@
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(135deg,#edf2fb,#d7e3fc);
+
+    min-height:100vh;
+
+    padding:40px;
+}
+
+/* ===========================
+   TÍTULO
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#1d3557;
+
+    font-size:42px;
+}
+
+/* ===========================
+   FORMULÁRIO
+=========================== */
+
+form{
+
+    width:650px;
+
+    margin:0 auto 40px;
+
+    display:flex;
+
+    gap:15px;
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+form input[type=text]{
+
+    flex:1;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    border:1px solid #ced4da;
+
+    font-size:17px;
+
+    outline:none;
+}
+
+form input[type=text]:focus{
+
+    border-color:#0d6efd;
+}
+
+form input[type=submit]{
+
+    padding:13px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+form input[type=submit]:hover{
+
+    background:#0b5ed7;
+}
+
+/* ===========================
+   QUADRO
+=========================== */
+
+.quadro{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+/* ===========================
+   COLUNAS
+=========================== */
+
+.coluna{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    min-height:550px;
+}
+
+.coluna h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#34495e;
+
+    font-size:24px;
+}
+
+/* Faixa superior */
+
+#todo{
+
+    border-top:7px solid #0d6efd;
+}
+
+#doing{
+
+    border-top:7px solid #ffc107;
+}
+
+#done{
+
+    border-top:7px solid #198754;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:#f8f9fa;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+
+    transition:.25s;
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.card p{
+
+    margin-bottom:15px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#2d3436;
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.card button{
+
+    padding:8px 14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+    margin-right:6px;
+
+    margin-top:6px;
+}
+
+.card button:hover{
+
+    transform:scale(1.05);
+}
+
+/* Avançar */
+
+.avancar{
+
+    background:#198754;
+
+    color:white;
+}
+
+/* Voltar */
+
+.voltar{
+
+    background:#ffc107;
+
+    color:#222;
+}
+
+/* Excluir */
+
+.excluir{
+
+    background:#dc3545;
+
+    color:white;
+}
+
+/* Área da pesquisa */
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    max-width: 400px;
+    margin: 20px auto;
+
+    background: #ffffff;
+    border: 2px solid #dfe6e9;
+    border-radius: 12px;
+
+    padding: 12px 16px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    transition: all .3s ease;
+}
+
+/* Efeito ao clicar */
+.pesquisa:focus-within {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 4px rgba(79,70,229,.15);
+}
+
+/* Ícone */
+.pesquisa span {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Campo */
+#inBuscar {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+
+    background: transparent;
+}
+
+/* Placeholder */
+#inBuscar::placeholder {
+    color: #999;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:1100px){
+
+    .quadro{
+
+        grid-template-columns:1fr;
+    }
+
+    form{
+
+        width:100%;
+    }
+}
+
