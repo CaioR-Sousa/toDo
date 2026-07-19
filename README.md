@@ -37,17 +37,6 @@ Este projeto foi desenvolvido para praticar:
 * Persistência de dados com LocalStorage
 * Estruturação e organização de código
 
-## 🚀 Como executar
-
-1. Clone este repositório:
-
-```bash
-git clone <URL_DO_REPOSITORIO>
-```
-
-2. Abra a pasta do projeto.
-
-3. Execute o arquivo `index.html` em qualquer navegador moderno.
 
 ## 📂 Estrutura do Projeto
 
